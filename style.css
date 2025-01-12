@@ -1,0 +1,122 @@
+/* Google Fonts - Jersey */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+body{
+    background: rgb(2,0,36);
+    color: white;
+    font-family: 'Jersey', sans-serif;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    border: 5px solid transparent;
+    border-radius: 1rem;
+    background: linear-gradient(#000, #000) padding-box, linear-gradient(225deg, #70369d, #487de7, #faeb36) border-box;
+    padding: 20px;
+}
+/* input field styling */
+input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    transition: border-color 0.3s ease-in-out;
+    min-width: 300px;
+}
+
+input:focus {
+    outline: none;
+    color: aliceblue;
+}
+input:focus::placeholder {
+    transform: translateY(-5px);
+    font-size: 10px;
+    font-style: italic;
+    color: grey;
+    transition: 0.3s ease;
+}
+
+/* Reset default button styles */
+button {
+    all: unset; /* This resets all browser default styles */
+}
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #000;
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out; 
+    background-color: transparent;
+}
+/* Hover effect */
+.btn:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect */
+.btn:focus {
+    outline: none; 
+    box-shadow: 0 0 5px 2px rgba(72, 125, 231, 0.7); 
+}
+
+.btn-submit {
+    background-color: green;
+    color: white;
+}
+.btn-reset {
+    background-color: #d32f2f; 
+    color: white;
+}
+
+/* Todo List Container */
+.todo-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Space between todo items */
+    padding: 10px;
+    width: 100%; /* Ensure it takes the full width of the parent */
+}
+
+/* Todo Item Styling */
+.todo-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+    gap: 15px;
+    background-color:transparent; /* Optional: Add background for each item */
+    border-radius: 5px;
+    border-bottom: 1px solid grey;
+
+}
+
+/* Style the task number */
+.todo-number {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Style the task text */
+.todo-text {
+    font-size: 16px;
+    color: gray;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* text-decoration: line-through; */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <!-- Font Awesome LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="todo-container">
+            <!-- To enter the todo list -->
+            <div class="todo-entry">
+                <h1>WORK TO-DOS</h1>
+                <p>Write your todo list</p>
+                <form action="#" method="post">
+                    <input type="text" placeholder="ENTER YOUR TODOS" name="todo">
+                    <button type="submit"><span class="btn btn-submit"><i class="fas fa-paper-plane"></i></span></button>
+                    <button type="reset"><span class="btn btn-reset"><i class="fas fa-refresh"></i></span></button>
+                </form>
+            </div>
+            <!-- To display all the todo list -->
+            <div class="todo-list">
+                <div class="todo-display">
+                    <span class="todo-text">
+                        <span class="todo-number">1.</span> Sample Text and this this this thsi lorem*3 lorem lorem
+                    </span> 
+                    <button class="btn-check">
+                        <span class="btn btn-submit"><i class="fas fa-check"></i></span>
+                    </button>
+                </div>
+                
+                <!-- More todo items go here -->
+            </div>
+    </div>
+
+
+    <script src="script.js" type="text/js"></script>
+</body>
+</html>
